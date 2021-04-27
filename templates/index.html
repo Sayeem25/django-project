@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is my first django project</h1>
+    <br>
+    
+    {% for i in profile %}
+    
+        <h2>{{ i.name }}</h2>
+        <h1>{{ i.age }}</h1>
+        <h4>{{ i.address }}</h4>
+        <img src="{{ i.image.url }}" alt="Image" width=40%>
+        <hr>
+        <br>
+    {% endfor %}
+
+</body>
+</html>
