@@ -7,7 +7,7 @@ def blog_list(request):
     posts = Post.objects.all()
 
     context = {
-        'posts': Post
+        'posts': posts
     }
 
     return render(request, 'blog/index.html', context)
