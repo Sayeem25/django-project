@@ -11,3 +11,15 @@ def blog_list(request):
     }
 
     return render(request, 'blog/index.html', context)
+
+
+def blog_details(request, slug):
+
+    posts = Post.objects.get(slug=slug)
+
+    context = {
+        'post': posts
+
+    }
+
+    return render(request, 'blog/details.html', context)
