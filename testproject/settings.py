@@ -141,11 +141,12 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media/'
 
-AWS_ACCESS_KEY_ID = 'AKIARVGPJVYVGB6OFLTK'
-AWS_SECRET_ACCESS_KEY = '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'
+AWS_ACCESS_KEY_ID = 'AKIARVGPJVYVACD7DCFZ'
+AWS_SECRET_ACCESS_KEY = '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'
 AWS_STORAGE_BUCKET_NAME = 'nasim.secpstorage'
-AWS_S3_FILE_OVERWRITE = False
-AWS_DEFAULT_ACL = None
+AWS_S3_FILE_OVERWRITE = True
+#AWS_DEFAULT_ACL = None
+AWS_QUERYSTRING_AUTH = False
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 # Default primary key field type
