@@ -1,0 +1,5 @@
+#!e:\django-project\venv\scripts\python.exe
+
+import newrelic.admin
+
+newrelic.admin.main()
