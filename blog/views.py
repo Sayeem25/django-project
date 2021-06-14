@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from .forms import CommentForm
+from django.db.models import Count
 from django.http import HttpResponseRedirect
 from .models import Post, Category
 from django.db.models import Q
