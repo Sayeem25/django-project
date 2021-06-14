@@ -204,7 +204,9 @@
             {% for comment in comments %}
 
 							<li class="comment rounded">
-								
+								<div class="thumb">
+									<img src="{% static 'blog/images/default.png' %}" height="70" width="70" alt="Author" />
+								</div>
 								<div class="details">
 									<h4 class="name"><a href="#">{{ comment.name }}</a></h4>
 									<span class="date">{{ comment.creation | date }}</span>
@@ -351,7 +353,7 @@
 				<div class="row d-flex align-items-center gy-4">
 					<!-- copyright text -->
 					<div class="col-md-4">
-						<span class="copyright">© 2021 Katen. Template by ThemeGer.</span>
+						<span class="copyright">© 2021 all rights reserved Abu Sayeem.</span>
 					</div>
 
 					<!-- social icons -->
