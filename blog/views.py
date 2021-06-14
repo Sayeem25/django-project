@@ -114,7 +114,7 @@ def category(request, category_slug=None):
 
     latest_post = Post.objects.all()[:3]
 
-    paginator = Paginator(posts, 3)
+    paginator = Paginator(posts, 4)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
 
@@ -123,7 +123,7 @@ def category(request, category_slug=None):
         category = get_object_or_404(Category, slug=category_slug)
         posts = posts.filter(category=category)
 
-    paginator = Paginator(posts, 3)
+    paginator = Paginator(posts, 4)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
 
