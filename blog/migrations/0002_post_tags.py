@@ -7,7 +7,7 @@ import taggit.managers
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('taggit', '0004_auto_20210610_2340'),
+        
         ('blog', '0001_initial'),
     ]
 
